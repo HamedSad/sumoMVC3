@@ -41,3 +41,8 @@ function field(){
     $field = getOneField($_GET['idField']);   
     require('view/fieldView.php');
 }
+
+function suppr(){
+    $sup = delete($_GET['idSport']);
+    require('view/listSportsView.php');
+}

@@ -33,6 +33,10 @@ require('controller/controller.php');
         elseif($_GET['action'] == 'field'){
             field();
         }
+        
+        elseif($_GET['action'] == 'suppr'){
+            suppr();
+        }
     
 }  else  {
     

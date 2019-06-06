@@ -62,6 +62,13 @@ function getEquipments($idSport){
     return $equipment;
 }
 
+function delete($idSport){
+    $db = dbConnect();
+    $del = $db->prepare('DELETE FROM sports WHERE idSport = ?');
+    $del->execute(array($idSport));
+    return $del;
+}
+
 
 function dbConnect(){
     
