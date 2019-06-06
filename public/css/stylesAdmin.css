@@ -1,33 +1,26 @@
 /*  ViewAdmin */
 .textesport img{
-    width : 100%;
-    height : 60%;
+    width: 100%;
+    height: 60%;
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
 }
 
-
-/*  Insert et Update */
-
 h1{
-    text-align : center;
+    text-align: center;
 }
 
 p{
-    color : grey;
+    color: grey;
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 5%;
 }
 
 img{
-    width: 100px;
-    height: 80px;
-}
-
-.comments{
-    color : red;
+    width: 200px;
+    height: 160px;
 }
 
 .form-group{
@@ -36,12 +29,61 @@ img{
 
 .form-actions{
     padding-left: 20%;
-    padding-top : 10%;
+    padding-top: 10%;
 }
 
-/*   Delete  */
-.form-actions-delete{
-    padding-left: 20%;
-    
+/*SportsView*/
+form{
+    padding-top: 5em;
+    padding-left: 10%;
 }
+
+.form{
+    margin-top: 5em;
+}
+
+/*  Equipment  */
+.equipment{
+    margin-right: 3em;
+}
+
+.equipment p {
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.list img{
+    width: 150px;
+    height: 150px;
+}
+
+/*  Terrain  */
+.terrain{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.terrain img{
+    width: 20em;
+    height: 15em;
+}
+
+.terrain p{
+    text-align: center;
+}
+
+.card{
+    padding-right: 1em;
+}
+
+
+
 

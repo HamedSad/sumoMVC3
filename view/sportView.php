@@ -13,9 +13,25 @@
 
                 <p><?php echo $sport['titleSport'] ; ?><br><br>
                     Saison : <?php echo $sport['seasonSport'] ; ?><br><br>                     
-                    Terrain : <?php echo   $sport['nameField']; ?><br><br>             
+                    Terrain : <?php echo $sport['nameField']; ?><br><br>             
                     Règles du <?php echo $sport['nameSport'] ; ?> : <?php echo $sport['descriptionSport'] ; ?><br></p>
+            
+                <p>Equipement : </p>
+                    <div class="list">
+                    <?php               
+                    while($equipment = $equipments->fetch()){
+                        echo "<div class='equipment'>";
+                        
+                            echo "<img src=" . $equipment['urlImageEquipment'] . "><br>";
+                            echo "<p>" . $equipment['nameEquipment'] . "</p><br>";  
+                        
+                        echo "</div>";
+                    }
+                    ?>
+                    </div>                    
+                
             </div>
+            
             <a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left"></span> Retour</a>
         </div>
 <?php $content = ob_get_clean(); ?>
