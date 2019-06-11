@@ -1,5 +1,6 @@
 <?php $title= 'Accueil'; ?>
 
+
 <?php ob_start(); ?>
 
             <div class="wrapp">
@@ -39,7 +40,7 @@
                         
                         echo '<a class="btn btn-primary" href="update.php?idSport='. $data['idSport'] . ' "><span class="glyphicon glyphicon-pencil"></span> Modifier </a>';
                         
-                        echo '<a class="btn btn-danger" href="index.php?action=suppr&amp;idSport=' . $data['idSport'] . ' "><span class="glyphicon glyphicon-remove"></span> Supprimer </a>';
+                        echo '<a class="btn btn-danger" href="index.php?action=affichage&amp;idSport=' . $data['idSport'] . '"><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
                         
                         
                         echo '</tr>';

@@ -1,10 +1,10 @@
 <h1>Suppression</h1>
+    
+<?php 
 
-Etes-vous certain de vouloir supprimer?
-
-
-<?php
-
-echo '<a class="btn btn-danger" href="index.php?action=suppr&amp;idSport=' . $sup['idSport'] . ' "><span class="glyphicon glyphicon-remove"></span> Supprimer </a>';
+    echo 'Etes-vous certain de vouloir supprimer ' . $sport['nameSport'] . ' ?<br>';
+    
+    echo '<a class="btn btn-danger" href="index.php?action=suppr&amp;idSport=' . $sport['idSport'] . ' "><span class="glyphicon glyphicon-remove"></span> Oui </a>';
+    echo '<a href="index.php"> Non </a>';
 
 ?>

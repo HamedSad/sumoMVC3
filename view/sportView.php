@@ -28,11 +28,36 @@
                         echo "</div>";
                     }
                     ?>
-                    </div>                    
+                    </div>  
+                
+                
+                
+                
+                
+
+
+                <?php 
+                    $result = ($sport['idSport']*2)+1;
+                    if(($sport['idSport']) < 20){
+                        echo 'Prix article unitaire : ' . $sport['idSport'] . '€' . ' X 3  = ' . $sport['idSport']*3 ;
+                    }
+                    else{
+                        echo 'Prix article unitaire : ' . $sport['idSport'] . '€' . ' X 3  = ' . $sport['idSport']*5 ;
+                    }
+    echo '<br>resultat' .$result;
+                ?>
+                
+                
+                
+                
+                
+
                 
             </div>
             
             <a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left"></span> Retour</a>
+            
+            
         </div>
 <?php $content = ob_get_clean(); ?>
 

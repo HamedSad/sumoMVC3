@@ -43,7 +43,6 @@ function getFields(){
     return $all;
 }
 
-
 function getOneField($idField){
     $db = dbConnect();
     
@@ -56,6 +55,7 @@ function getOneField($idField){
 
 function getEquipments($idSport){
     $db = dbConnect();
+    
     $equipment = $db->prepare('SELECT * FROM equipment WHERE idSport = ?');
     $equipment->execute(array($idSport));
     
@@ -64,6 +64,7 @@ function getEquipments($idSport){
 
 function delete($idSport){
     $db = dbConnect();
+    
     $del = $db->prepare('DELETE FROM sports WHERE idSport = ?');
     $del->execute(array($idSport));
     return $del;

@@ -18,6 +18,7 @@ require('controller/controller.php');
         }  
 
         elseif($_GET['action'] == 'addSport'){
+            
             if(!empty($_POST['nameSport']) && !empty($_POST['descriptionSport']) && !empty($_POST['titleSport']) && !empty($_POST['seasonSport'])){
                 addSport($_POST['nameSport'], $_POST['titleSport'], $_POST['seasonSport'], $_POST['idField'], $_POST['descriptionSport'], $_POST['urlImageSport']);
             }
@@ -35,7 +36,17 @@ require('controller/controller.php');
         }
         
         elseif($_GET['action'] == 'suppr'){
-            suppr();
+            if(isset($_GET['idSport']) && $_GET['idSport'] > 0){
+            suppr($_GET['idSport']);
+           
+            }
+            else{
+                echo 'erreur suppression sport';
+            }
+        }
+        
+        elseif($_GET['action'] == 'affichage'){
+           affichage(); 
         }
     
 }  else  {
